@@ -1,13 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-// User function template for C++
-
 class Solution {
   public:
     int getMinDiff(int arr[], int n, int k) {
-        // code here
         if(n==1) return 0;
         sort(arr, arr+n);
         int d = arr[n-1] - arr[0];
@@ -22,8 +18,6 @@ class Solution {
         return d;
     }
 };
-
-//{ Driver Code Starts.
 int main() {
     int t;
     cin >> t;
